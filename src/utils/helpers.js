@@ -6,11 +6,11 @@ export function flattenProducts(data){
     return data.map(item =>{
 
         //claudinary 
-        // let image = item.image.url;
+         let image = item.image.url;
 
         //local setup
-        let image = `${url}${item.image.url}`;
-        return {...item,image}
+        //let image = `${url}${item.image.url}`;
+        return { ...item, image }
     })
 }
 
