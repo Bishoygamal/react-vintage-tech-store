@@ -14,6 +14,7 @@ import Products from './pages/Products';
 //components
 import Header from './components/Header';
 import Alert from './components/Alert';
+import PrivateRoute from './components/PrivateRoute';
 export default function App() {
   return <Router>
     <Header />
@@ -23,7 +24,7 @@ export default function App() {
       <Route path="/about"><About /></Route>
       <Route path="/cart"><Cart /></Route>
       <Route path="/about"><About /></Route>
-      <Route path="/checkout"><Checkout /></Route>
+      <PrivateRoute path="/checkout"><Checkout /></PrivateRoute>
       <Route path="/login"><Login /></Route>
       <Route exact path="/products"><Products /></Route>
       <Route path="/products/:id" children={<ProductDetails></ProductDetails>}></Route>
