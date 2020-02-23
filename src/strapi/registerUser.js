@@ -1,5 +1,5 @@
 // register user
-import { axios } from "axios";
+import axios  from "axios";
 import url from "../utils/URL";
 
 async function registerUser({ email, password, username }) {
@@ -12,3 +12,4 @@ async function registerUser({ email, password, username }) {
 }
 
 export default registerUser;
+

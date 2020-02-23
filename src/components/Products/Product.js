@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 export default function Product({ image, title, id, price }) {
+  console.log(image);
   return (
     <article className="product">
       <div className="img-container">
